@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import 'type';
+@import 'variables';
+@import 'mixins';
+@import 'helpers';
+@import 'buttons';
+@import 'components/_components';
+@import 'image-section';
+@import 'client-creative';
+
+
+*{
+  margin: 0px;
+
+}
+
+body{
+background-color: #F5F6FA;
+}
+
+hr{
+  opacity: 0.2;
+}
+
+.hidden{
+  display: none;
+}
+
+
+.glitch {
+  color: #fff;
+  position: relative;
+  margin: 0 auto;
+}
+@keyframes noise-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}% 0 #{$bottom}%  0);
+    }
+  }
+}
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: #fff;
+  background: $dark-blue;
+  overflow: hidden;
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}% 0 #{$bottom}%  0);
+    }
+  }
+}
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: #fff;
+  background: $dark-blue;
+  overflow: hidden;
+  animation: noise-anim-2 15s infinite linear alternate-reverse;
+}

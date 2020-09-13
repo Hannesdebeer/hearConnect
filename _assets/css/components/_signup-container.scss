@@ -1,0 +1,122 @@
+.signup-container{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-color: #dddce1;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(72deg, #dddce1, #fff);
+
+.company-signup{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  max-width: 500px;
+}
+
+
+
+.headline{
+  color: $dark-blue;
+  font-weight: 900;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.subhead{
+  margin-top: 5px;
+  text-align: center;
+  font-size: 13px;
+}
+
+.form{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  .title{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10px;
+    opacity: 0.7;
+  }
+
+  .normal{
+      background-color: white !important;
+  }
+  .error{
+    background-color: #e74c3c ;
+    color: #fff;
+  }
+  .error::placeholder{
+      color:#fff;
+      opacity: 0.8;
+  }
+
+  textarea{
+    border-radius: 3px;
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+    border: none;
+    resize: none;
+    padding: 10px;
+    font-size: 15px;
+    outline-color: #071655;
+    min-height: 70px;
+  }
+
+  textarea::placeholder{
+    opacity: 0.3;
+    letter-spacing: 1px;
+  }
+
+  input{
+    margin-top: 20px ;
+    margin-bottom: 20px ;
+    text-indent: 10px;
+    font-size: 15px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    outline-color: #071655;
+
+  }
+
+  input::placeholder{
+    opacity: 0.3;
+    letter-spacing: 1px;
+  }
+
+  select{
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    border: none;
+    font-size: 15px;
+    outline-color: $dark-blue;
+
+  }
+  button{
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+}
+}
+
+
+.sentcontainer{
+  background-image: linear-gradient(72deg, #dddce1, #fff);
+  display: flex;
+  font-size: 50px;
+  font-family: 'Noto Sans',sans-serif;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-height:600px;
+  font-weight: 600;
+  color: $dark-blue ;
+
+}

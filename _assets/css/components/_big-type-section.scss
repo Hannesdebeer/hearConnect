@@ -1,0 +1,46 @@
+.big-type-section{
+
+  display: flex;
+  flex-direction: row;
+
+  @include phone{
+    flex-direction: column;
+    flex-direction:column-reverse;
+  };
+
+  .section{
+
+    font-family: 'Noto Sans', sans-serif;
+    flex:1;
+    background-color: $dark-blue;
+    padding: 50px;
+    color: #fff;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    .highlight{
+      background-color: #fff;
+      color: $dark-blue ;
+
+    }
+  }
+
+  .white{
+    background-color: white;
+    color : $dark-blue;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-image: asset_url('poster.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    @include phone{
+    min-height: 600px;
+    };
+  }
+
+
+
+}

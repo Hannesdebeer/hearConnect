@@ -1,0 +1,128 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDwmcc6SvUSLd0H1UKT8qSGPmlVpHndTl0",
+    authDomain: "third-eye-cb6d1.firebaseapp.com",
+    databaseURL: "https://third-eye-cb6d1.firebaseio.com",
+    projectId: "third-eye-cb6d1",
+    storageBucket: "third-eye-cb6d1.appspot.com",
+    messagingSenderId: "542739626769",
+    appId: "1:542739626769:web:0f86ff4b84d635d5336ab0",
+    measurementId: "G-CNRX2TXXM5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+
+  function validateForm(){
+
+    var email = document.getElementById('email').value;
+    var firstname = document.getElementById('firstname').value;
+    var lastname = document.getElementById('lastname').value;
+    var phone = document.getElementById('phone').value;
+    var location = document.getElementById('location').value;
+    var trade = document.getElementById('trade').value;
+    document.getElementById('date').value = new Date();
+
+    var sendemail = true ;
+    var sendfirstname = true ;
+    var sendlastname = true ;
+    var sendphone = true;
+    var sendtrade = true;
+    var sendlocation = true ;
+
+    if (validate.single(email, {presence: true, email: true}))
+    {
+      //not a valid email
+      document.getElementById("email").classList.add("error");
+      sendemail = false ;
+
+    }
+    if (firstname == "")
+    {
+      document.getElementById("firstname").classList.add("error");
+      sendfirstname = false ;
+    }
+
+    if (lastname == "")
+      {
+        document.getElementById("lastname").classList.add("error");
+        sendlastname = false ;
+      }
+
+      if (phone == "")
+      {
+        document.getElementById("phone").classList.add("error");
+        sendphone = false;
+
+      }
+
+      if (trade == "")
+      {
+        document.getElementById("trade").classList.add("error");
+        sendtrade = false;
+
+      }
+
+      if (location == "Select Location")
+      {
+        document.getElementById("location").classList.add("error");
+        sendlocation = false ;
+      }
+
+      console.log("email " + sendemail);
+      console.log("firstname " + sendfirstname);
+      console.log("lastname " + sendlastname);
+      console.log("phone " + sendphone);
+      console.log("location " + sendlocation);
+      console.log("trade " + sendtrade);
+      console.log("-------------------------");
+
+
+      if(sendemail && sendfirstname && sendlastname && sendphone && sendlocation && sendtrade){
+        writeUserData() ;
+        alert('sent') ;
+        document.getElementById("sentcontainer").classList.remove("hidden");
+        document.getElementById("signup-container").classList.add("hidden");
+      }
+
+  };
+
+  function normal(x){
+    x.classList.remove("error");
+  };
+
+
+
+
+
+  function writeUserData() {
+
+
+
+      firebase.database().ref('users').push({
+
+      email: document.getElementById('email').value,
+      firstname: document.getElementById('firstname').value,
+      lastname: document.getElementById('lastname').value,
+      number: document.getElementById('phone').value,
+      location: document.getElementById('location').value,
+      trade: document.getElementById('trade').value,
+      date: document.getElementById('date').value,
+
+    });
+  }
+
+</script>

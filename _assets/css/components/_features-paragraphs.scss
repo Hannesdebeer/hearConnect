@@ -1,0 +1,58 @@
+.features-container{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: center;
+
+  @include phone{
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  };
+
+
+  .paragraph{
+    max-width: 400px;
+
+    .headline{
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 400;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+
+      .line{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        margin-right: 20px;
+        height: 1px;
+        width: 50px;
+        background-color: $dark-blue;
+      }
+
+    }
+
+    color: $dark-blue;
+    font-size: 13px;
+    line-height: 23px;
+    flex:1;
+    margin-left:50px;
+    margin-right:50px;
+
+
+    .body-copy{
+      margin-top: 15px;
+    }
+
+    @include phone{
+      margin-top: 30px;
+    };
+  }
+
+}

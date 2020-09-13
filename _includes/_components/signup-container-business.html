@@ -1,0 +1,92 @@
+<div id="signup-container-business" class="signup-container hidden" >
+
+  <div class="company-signup">
+
+    <div class="headline">
+      Tell us what you need.
+    </div>
+    <div class="subhead">
+      Here we go! Long briefs suck, so we’re keeping it nice and tight. Give us the background of your project and we’ll connect you to perfect creative team to knock it out the park.
+    </div>
+
+    <div class="form">
+      <div class="title" style="font-weight:900;">
+        Company name
+      </div>
+      <div class="title" style="opacity:0.5;">
+        This is a pretty easy one, if you can't get this right, we'll be a little worried.
+
+      </div>
+      <input type="text" id="name" name="name" placeholder="Company name" onfocus="normal(this)">
+
+      <div class="title" style="font-weight:900;">
+        contact email
+      </div>
+      <div class="title" style="opacity:0.5;">
+        This is a pretty easy one, if you can't get this right, we'll be a little worried.
+      </div>
+      <input type="text" id="email" name="email" placeholder="contact email" onfocus="normal(this)">
+
+      <div class="title" style="font-weight:900;">
+        contact phone number
+      </div>
+      <div class="title" style="opacity:0.5;">
+        This is a pretty easy one, if you can't get this right, we'll be a little worried.
+
+      </div>
+      <input type="text" id="name" name="name" placeholder="Company name" onfocus="normal(this)">
+
+
+      <div class="title" style="font-weight:900;">
+        the goal
+      </div>
+      <div class="title" style="opacity:0.5;">
+        Fundamentally there are three ways to grow a business.Get more customers, Get more customers to buy more products, Get customers to buy products for more money
+        Briefly tell us what you’re trying to achieve?
+
+      </div>
+
+      {% include _components/textarea.html id='goal' placeholder='what goal are you trying to achieve' %}
+
+      <div class="title">
+        Using the above as a springboard tell us what moves your business dial and what the play is for the particular brief?
+
+      </div>
+
+      {% include _components/textarea.html id='goal' placeholder='what moves your business dial' %}
+
+      <div class="title" style="font-weight:900;">
+        Business Challenge
+      </div>
+      <div class="title" style="opacity:0.5">
+        This one’s important. Give us a quick  low-down of the biggest challenge(s) in achieving the above goal.
+      </div>
+      {% include _components/textarea.html name='business challenge' placeholder='business challenge' %}
+      <div class="title" style="font-weight:900;">
+        Target Audience
+      </div>
+      <div class="title" style="opacity:0.5">
+        Give us an idea of who your bullsey target audience is. Who’se gotta love what we’re selling? Using the below  parameters, give your creatives a simple and clear overview of who they’re targeting:
+
+      </div>
+
+      {% include _components/textarea.html name='TA' placeholder='who is your target audience' %}
+
+      <div class="title" style="font-weight:900;">
+        what would make you happy
+      </div>
+      <div class="title" style="opacity:0.5">
+        Close your eyes and imagine a world where everything goes to plan, your campaign is a total success. Paint us that picture in 100 words or less:
+      </div>
+      {% include _components/textarea.html name='success' placeholder='what would make you happy?' %}
+
+
+      <input type="hidden" id="date" value="">
+      <button class="fill" onclick="validateForm()">Submit brief</button>
+    </div>
+
+  </div>
+  <div id="sentcontainer" class="sentcontainer hidden">
+    AWESOME, WE RECEIVED YOUR SUBMISSION!
+  </div>
+</div>

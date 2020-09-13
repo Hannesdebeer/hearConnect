@@ -1,0 +1,42 @@
+<div id="signup-container-creative" class="signup-container hidden">
+
+  <div class="headline">
+    Sign up to our Beta platform release
+  </div>
+  <div class="subhead">
+    Free for a limited time
+  </div>
+
+  <div class="form">
+    <div class="title">
+      Email
+    </div>
+    <input type="text" id="email" name="email" placeholder="email" onfocus="normal(this)">
+    <div class="title">
+      First name:
+    </div>
+    <input type="text" id="firstname" name="firstname" placeholder="Firstname" onfocus="normal(this)">
+    <div class="title">
+      Last name:
+    </div>
+    <input type="text" id="lastname" name="lastname" placeholder="Lastname" onfocus="normal(this)">
+    <div class="title">
+      Number:
+    </div>
+    <input id="phone" name="phone" type="tel" placeholder="+123 4567899"  onfocus="normal(this)">
+    <div class="title">
+      Location:
+    </div>
+      {% include _components/location-dropdown.html %}
+    <div class="title">
+      Trade:
+    </div>
+    <input type="text" id="trade" name="trade" placeholder="Trade"  onfocus="normal(this)">
+    <input type="hidden" id="date" value="">
+     <button class="fill" onclick="validateForm()">Sign Up</button>
+  </div>
+
+</div>
+<div id="sentcontainer" class="sentcontainer hidden">
+AWESOME, WE RECEIVED YOUR SUBMISSION!
+</div>

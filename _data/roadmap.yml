@@ -1,0 +1,62 @@
+roadmap:
+  - date: 2018
+    period: true
+
+  - date: Q1 and Q2
+    events:
+      - event: Pyxis Research
+      - description: " <br>"
+
+  - date: Q2 and Q3
+    events:
+      - event: Pyxis App Design
+      - description: " <br>"
+
+  - date: Q4
+    events:
+      - event: Pyxis Beta Launch
+      - description: " <br>"
+
+  - date: Q4
+    events:
+      - event: Pyxis Demo
+      - description: " <br>"
+
+  - date: Q4
+    events:
+      - event: Blockchain Conference 2018
+      - description: " <br>"
+
+  - date: Q4
+    events:
+      - event: Pyxis ICO - PYX token offering 2018
+      - description: " <br>"
+
+  - date: 2019
+    period: true
+
+  - date: 2019+
+    events:
+      - event: Pyxis Tools and API
+      - description: " <br>"
+
+  - date: 2020
+    period: true
+
+  - date: 2020+
+    events:
+      - event: Pyxis Blockchain Development
+      - description: " <br>"
+
+  - date: 2020+
+    events:
+      - event: Pyxis Mining
+      - description: " <br>"
+
+  - date: 2021
+    period: true
+
+  - date: 2021+
+    events:
+      - event: Pyxis New Product Development
+      - description: " <br>"

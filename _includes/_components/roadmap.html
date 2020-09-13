@@ -1,0 +1,62 @@
+<div class="roadmap-container">
+  <div class="type-wrapper">
+
+    <div class="headline">
+      <div class="circles">
+        {% asset circles-white.svg height="15px" %}
+      </div>
+      <div class="copy">
+        PYXIS <span class="bold"> ROADMAP <span>
+        </div>
+      </div>
+
+      <div class="body-copy">
+        <div class="bold">
+To prioritize what we work on, we've outlined the product roadmap below.         </div>
+        <div class="thin">
+          This roadmap is a rough estimate on what we're focused on building in the near, medium, and long term. New assets are continually listed on the exchange and don't appear below.
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+
+    <ul class="roadmap roadmap-centered">
+      {% for item in site.data.roadmap.roadmap %}
+
+      {% if item.period == true %}
+      <li class="roadmap-item period">
+        <div class="roadmap-info"></div>
+        <div class="roadmap-marker"></div>
+        <div class="roadmap-content">
+          <h2 class="roadmap-title">{{item.date}}</h2>
+        </div>
+      </li>
+      {% else %}
+
+
+      <li class="roadmap-item">
+        <div class="roadmap-info">
+          <span>{{item.date}}</span>
+        </div>
+        <div class="roadmap-marker"></div>
+        <div class="roadmap-content">
+          {% for event in item.events %}
+          <h3 class="roadmap-title">{{event.event}}</h3>
+          <p>{{event.description}}</p>
+          {% endfor %}
+
+        </div>
+      </li>
+      {% endif %}
+      {% endfor %}
+
+    </ul>
+
+
+  </div>
+
+
+</div>
