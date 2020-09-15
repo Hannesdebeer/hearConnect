@@ -1,0 +1,21 @@
+.graphs-container{
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  .headline{
+    font-size: 37px;
+    font-weight: 800;
+    text-align: center;
+    color: #fff;
+  }
+  background-color: $dark-text;
+  max-width: 90%;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  display: flex;
+  .section{
+    flex:1;
+  }
+}

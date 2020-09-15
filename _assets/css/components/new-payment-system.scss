@@ -2,23 +2,39 @@
   padding-top: 100px;
   padding-bottom: 50px;
   background-color: $lightbackground;
-  .headline{
-      font-size: 37px;
-      font-weight: 800;
-      text-align: center;
-  }
-  .copy-container{
-    text-align: center;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto ;
-    margin-top: 50px;
-    // background-color: rgba(189,195,199,0.2);
+  .content-wrapper{
     background-color: $pink;
     color:#fff;
     border-radius: 50px;
     padding: 50px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto ;
+    display: flex;
+
+    .image-container{
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img{
+      width: 80%
+      }
+    }
+  }
+  .headline{
+      font-size: 37px;
+      font-weight: 800;
+      text-align: center;
+      color: #fff;
+  }
+  .copy-container{
+    flex:2;
+    text-align: center;
+
+    // background-color: rgba(189,195,199,0.2);
     .intro{
+          margin-top: 50px;
       font-weight: 600;
     }
     .terms{
