@@ -1,8 +1,8 @@
 
 title: Third Eye
 email: your-email@example.com
-description: Third Eye.
-baseurl: "" # the subpath of your site, e.g. /blog
+description: Crypt
+baseurl: "/crypt" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:
@@ -50,7 +50,7 @@ assets:
 
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
-  prefix: "/thirdeye/assets"
+  prefix: "/crypt/assets"
   assets:
     - "*.png"
     - "bundle.css"
