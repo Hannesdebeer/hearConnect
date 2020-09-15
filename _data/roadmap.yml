@@ -1,62 +1,62 @@
 roadmap:
-  - date: 2018
+  - date: 2020
     period: true
 
-  - date: Q1 and Q2
+  - date: September 23
     events:
-      - event: Pyxis Research
+      - event: stake CRYPT to get your part of 5,000 CRYPT tokens
       - description: " <br>"
 
-  - date: Q2 and Q3
+  - date: October 7th
     events:
-      - event: Pyxis App Design
+      - event:  stake CRYPT will be 5,000 CRYPT. With each CRYPT you will receive 100 Nethos (NETH) token
       - description: " <br>"
 
-  - date: Q4
+  - date: October 21st
     events:
-      - event: Pyxis Beta Launch
+      - event: Staking CRYPT and NETH will yield you your portion of 5000 CRYPT and 500,000 NETH.
       - description: " <br>"
 
-  - date: Q4
+  - date: November 4th
     events:
-      - event: Pyxis Demo
+      - event: Stake your Nethos for 7,500 CRYPT
       - description: " <br>"
 
   - date: Q4
     events:
       - event: Blockchain Conference 2018
       - description: " <br>"
-
-  - date: Q4
-    events:
-      - event: Pyxis ICO - PYX token offering 2018
-      - description: " <br>"
-
-  - date: 2019
-    period: true
-
-  - date: 2019+
-    events:
-      - event: Pyxis Tools and API
-      - description: " <br>"
-
-  - date: 2020
-    period: true
-
-  - date: 2020+
-    events:
-      - event: Pyxis Blockchain Development
-      - description: " <br>"
-
-  - date: 2020+
-    events:
-      - event: Pyxis Mining
-      - description: " <br>"
-
-  - date: 2021
-    period: true
-
-  - date: 2021+
-    events:
-      - event: Pyxis New Product Development
-      - description: " <br>"
+  #
+  # - date: Q4
+  #   events:
+  #     - event: Pyxis ICO - PYX token offering 2018
+  #     - description: " <br>"
+  #
+  # - date: 2019
+  #   period: true
+  #
+  # - date: 2019+
+  #   events:
+  #     - event: Pyxis Tools and API
+  #     - description: " <br>"
+  #
+  # - date: 2020
+  #   period: true
+  #
+  # - date: 2020+
+  #   events:
+  #     - event: Pyxis Blockchain Development
+  #     - description: " <br>"
+  #
+  # - date: 2020+
+  #   events:
+  #     - event: Pyxis Mining
+  #     - description: " <br>"
+  # 
+  # - date: 2021
+  #   period: true
+  #
+  # - date: 2021+
+  #   events:
+  #     - event: Pyxis New Product Development
+  #     - description: " <br>"

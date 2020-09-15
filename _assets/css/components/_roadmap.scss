@@ -5,19 +5,22 @@
   margin-top: 100px;
   z-index:100;
   padding: 50px;
-  color: #fff;
-  background-image: asset_url('roadmap-background.jpg') ;
+  color: #040c18;
+  background-color: #f5f6fa;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  align-items: center;
 
   .type-wrapper{
     display: flex;
     flex-direction: column;
     max-width: 700px;
-    margin-top: 100px;
     z-index: 1;
-    color: #fff;
+    color: #040c18;
+    text-align: center;
+    align-items: center;
+
 
     .headline{
 
@@ -29,11 +32,15 @@
       align-items: center;
       align-content: center;
 
-      .circles{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
+
+      .line{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        margin-right: 20px;
+        height: 1px;
+        width: 50px;
+        background-color: #040c18;
       }
 
     }
@@ -54,7 +61,7 @@
 }
 
 
-  $primary-color: #1E8BC3;
+  $primary-color: #5d7099;
   $primary-color-hover: scale-color($primary-color, $lightness: 32%);
 
   .example-header {

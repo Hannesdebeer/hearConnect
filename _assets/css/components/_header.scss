@@ -61,10 +61,9 @@
     }
 
   }
-  background: asset-url("background-gif2.gif");
+  background-color:$lightbackground ;
   position: relative;
   min-height:700px;
-  background-color: $dark-blue;
   // background-image: linear-gradient(#FF0099, #493240);
   display: flex;
   flex-direction: column;
@@ -118,21 +117,32 @@
     padding: 15px 25px;
     color: #fff;
     max-width: 700px;
-    margin-bottom: 30px;
+    margin-top: 40px;
     #timer{
       font-size: 30px;
       font-weight: 900;
     }
   }
 
+  .logo{
+    display: flex;
+    height:100px;
+    width: 100%;
+    img{
+      width: 100%;
+      height:auto;
+    }
+    }
+
   .headline{
-    font-size: 100px;
+    font-size: 30px;
     font-family: 'Noto Sans';
-    color: #fff;
-    text-transform: capitalize;
+    color: $dark-text;
+    text-transform: uppercase;
     font-weight: 900;
     line-height: 1;
-    letter-spacing: -5px ;
+    text-align: center;
+    margin-top: 20px;
 
     @include phone{
 
@@ -146,10 +156,15 @@
     padding-left: 10px;
     padding-right:10px;
     font-weight: 300;
-    margin-top: 20px;
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 14px;
     text-align: left;
-    max-width: 700px;
+    max-width: 300px;
+    font-weight: 300;
+    color: $dark-text;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .signup-button{
     font-family: 'Roboto' ;
