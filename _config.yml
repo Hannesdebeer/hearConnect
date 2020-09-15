@@ -39,8 +39,8 @@ include:
 
 assets:
   compress:
-    css: false
-    js: false
+    css: true
+    js: true
   cache: false
 
   autoprefixer:
