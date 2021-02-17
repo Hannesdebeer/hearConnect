@@ -1,0 +1,10 @@
+<svg id="main_cta_btn" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="290" height="57" viewBox="0 0 290 57">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.564" y1="0.5" x2="1.282" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#09bc8a"/>
+      <stop offset="1" stop-color="#65f4cc"/>
+    </linearGradient>
+  </defs>
+  <rect id="Rectangle_18" data-name="Rectangle 18" width="290" height="57" rx="28.5" fill="url(#linear-gradient)"/>
+  <text id="Want_more_info_" data-name="Want more info?" transform="translate(145 37)" fill="#fff" font-size="23" font-family="Raleway-Bold, Raleway" font-weight="700" letter-spacing="0.085em"><tspan x="-103.465" y="0">Want more info?</tspan></text>
+</svg>

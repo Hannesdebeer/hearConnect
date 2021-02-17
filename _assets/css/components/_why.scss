@@ -1,0 +1,51 @@
+.why-section{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  .features-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    max-width: 1200px;
+    width: 100%;
+
+    @include phone{
+      flex-direction: column;
+      align-items: center;
+    };
+
+
+    .feature-container{
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 100px;
+      .image-container{
+        max-width: 250px;
+        display: flex;
+        justify-content: center;
+
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      .headline-container{
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 30px;
+      }
+      .description-container{
+        text-align: center;
+        margin-top: 30px;
+        height:20px;
+      }
+    }
+  }
+}

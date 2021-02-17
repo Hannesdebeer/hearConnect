@@ -1,0 +1,18 @@
+.managed-care-model{
+  background-color: #f8f8f8;
+  padding-bottom: 100px;
+  padding-left: 45px;
+  padding-right: 45px;
+  .image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    img{
+      max-width: 80%;
+    }
+    @include phone{
+      display: flex;
+    };
+  }
+}

@@ -1,0 +1,111 @@
+.research-section{
+  background-color: #fff;
+  .research-wrapper{
+    display: flex;
+    flex-direction: column;
+    .research-container{
+      display: flex;
+      justify-content: center;
+      margin-top: 150px;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      @include phone{
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+      };
+
+      .image-container{
+        max-width: 600px;
+
+        @include phone{
+          display: flex;
+          justify-content: center;
+        };
+        img{
+          width: 100%;
+          height: auto;
+          @include phone{
+            max-width: 70%;
+          };
+        }
+      }
+      .copy-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+        max-width: 600px;
+
+        @include phone{
+          margin-left:0px;
+          margin-right: 0px;
+        };
+        .headline{
+          font-size: 25px;
+          font-weight: 400;
+        }
+        .top-headline{
+          @include phone{
+            margin-top: 50px
+          };
+        }
+        .sub-headline{
+          font-weight: 300;
+          font-size: 25px;
+          margin-top: 50px;
+        }
+        .description{
+          font-size: 25px;
+          font-weight: 100;
+          margin-top: 50px;
+          line-height: 50px;
+
+          @include phone{
+            font-size: 20px;
+            line-height: 30px;
+          };
+        }
+        .link{
+          color: #09BC8A;
+          font-size: 25px;
+          font-style: italic;
+          font-weight: 400;
+        }
+      }
+    }
+    .last{
+      flex-direction: row-reverse;
+      @include phone{
+        flex-direction: column;
+        margin-top: 0px;
+      };
+    }
+  }
+  .more-button{
+    margin-left: auto;
+    margin-right: auto;
+    width: 290px;
+    height:57px;
+    background-color: #fff;
+    border:3px solid #09BC8A ;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    filter: drop-shadow(1px 10px 15px rgba(30,30,30,0.4));
+    margin-bottom: 50px;
+    img{
+      position: relative;right:-50px;
+    }
+  }
+}

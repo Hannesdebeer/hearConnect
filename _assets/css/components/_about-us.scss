@@ -1,0 +1,59 @@
+.about-us-container{
+  background-color:  #fff;
+  .vision-container{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    .headline{
+      font-size: 35px;
+      margin-left: 6vw;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      font-weight: 600;
+    }
+    .vision-element-wrapper{
+      display: flex;
+      justify-content: space-around;
+      padding-left: 5vw;
+      padding-right: 5vw;
+      flex-wrap: wrap;
+
+
+
+      .vision-element{
+        width: 400px;
+        height:540px;
+        background-color: #F8F8F8;
+        border-radius: 30px;
+        flex-shrink: 0;
+        margin-bottom: 40px;
+
+        @include phone{
+          max-width: 95%;
+        };
+
+
+        .image-container{
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+        }
+        .copy-container{
+          margin-top: 50px;
+          font-size: 25px;
+          max-width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          line-height: 38px;
+          font-weight: 100;
+
+        }
+
+        .green{
+          color: #09BC8A;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
